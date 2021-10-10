@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos Shopitesz</title>
+</head>
+<body>
+    <h1>Regristrar producto</h1>
+    <form action="/registrarNuevoProducto" method="post">
+        <label for="foto">Fotografía: </label>
+        <input type="file" name="foto" id="foto" value="Selecciona la imagen" accept="image/png, .jpeg, .jpg, image/gif">
+        <br/> <br/>
+        <label for="idProducto">ID del Producto:</label>
+        <input type="number" name="idProducto" id="idProducto" placeholder="ID del producto" required>
+        <br/> <br/>
+        <label for="idCategoria">ID de la Categoria:</label>
+        <input type="number" name="idCategoria" id="idCategoria" placeholder="ID de la categoria" required>
+        <br/> <br/>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre del Producto" maxlength="50" size="50"required>
+        <br> <br/>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del Producto" maxlength="100" size="100" required>
+        <br> <br/>
+        <label for="precioVenta">Precio de venta:</label>
+        <input type="number" name="precioVenta" id="precioVenta" placeholder="Precio de venta del producto" required>
+        <br> <br/>
+        <label for="existencia">Existencia:</label>
+        <input type="number" name="existencia" id="existencia" placeholder="Cuanto producto hay en existencia" required>
+        <br> <br/>
+        <label for="color">Color:</label>
+        <input type="text" name="color" id="color" placeholder="Color del Producto" maxlength="25" required>
+        <br> <br/>
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" id="marca" placeholder="Marca del Producto" maxlength="50" required>
+        <br> <br/>
+        <label for="costoEnvio">Costo de envío:</label>
+        <input type="number" name="costoEnvio" id="costoEnvio" placeholder="Costo de envio del Producto" required>
+        <br> <br/>
+        <label for="estatus">Estatus:</label>
+        <input type="checkbox" name="estatus" id="estatus" checked>
+        <br> <br/>
+        <button type="submit">Registrar</button>
+        <br> <br/>
+        <a href="/consultarProductos">Regresar</a>
+    </form>
+</body>
+</html>
